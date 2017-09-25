@@ -16,7 +16,7 @@ int Sensor::getP_NUMB() {
 }
 
 void Sensor::sWrite(const char* x) {
-	Serial.begin(115200);
+	Serial.begin(9600);
 	Serial.write(x);
 	Serial.end();
 }

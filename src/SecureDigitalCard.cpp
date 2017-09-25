@@ -3,7 +3,7 @@ SecureDigitalCard::SecureDigitalCard(int pn) : Sensor(pn){}
 
 int SecureDigitalCard::init(const char* text)
 {
-	Serial.begin(115200);
+	Serial.begin(9600);
 	while (!Serial) {}
 	Serial.println("Inicializando SD.");
   SD.begin(4);
@@ -16,7 +16,7 @@ int SecureDigitalCard::init(const char* text)
 
 void SecureDigitalCard::loop(const char* text_tobe_written)
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
 	File log = SD.open("log.txt", FILE_WRITE);
 	if (log) {
 		Serial.println("Iniciando escrita ao arquivo 'log.txt'.");
