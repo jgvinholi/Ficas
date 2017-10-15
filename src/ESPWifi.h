@@ -1,5 +1,5 @@
 #pragma once
-#include <ESP8266WiFi.h>
+#include "ESP8266.h"
 #include "Global_Includes.h"
 #include "Sensor.h"
 
@@ -12,4 +12,4 @@ public:
     int init();
     ESPWifi(int pn);
     ~ESPWifi();
-}
+};
