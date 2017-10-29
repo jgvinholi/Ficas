@@ -10,6 +10,8 @@ private:
     const double T0 = 298.15;
     const double BETA_COEFF = 3950; //to confirm
     const double R0 = 10000; //resistance at room temp
+    const int LED1 = 16; //D12
+    const int BUZZ = 15; //D11
     void loop();
     int port;
     double analog_sum;
