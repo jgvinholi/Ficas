@@ -17,15 +17,15 @@ void Thermistor::loop(){
     resistance = 10000*v0/(VREF-v0);
     inverse_temp = 1/T0 + 1/BETA_COEFF*log(resistance/R0);
     temp_c = 1/inverse_temp - 273.15;
-    if(temp_c>40.0){
-        sWrite("Catching Fire.\n");
-        digitalWrite(LED1,1);
-        digitalWrite(BUZZ,1);   
-    }
-    else{
-        sWrite("Everything ok.\n");
-        digitalWrite(LED1,0);
-        digitalWrite(BUZZ,1);
-    }
-    delay(5000);
+
 }
+
+void Thermistor::openValve(){
+
+}
+
+void Thermistor::closeValve(){
+
+}
+
+Thermistor::~Thermistor(){}
