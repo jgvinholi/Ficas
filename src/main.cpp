@@ -2,9 +2,9 @@
 #include "Thermistor.h"
 
 int temp;
-const int LED1 = 16; //D12
-const int BUZZ = 15; //D11
-const int THERM = 17; //D13
+const int LED1 = 10; //D12
+const int BUZZ = 9; //D11
+const int THERM = 0; //A0
 Thermistor* therm;
 void setup() {
     pinMode(LED1,OUTPUT);
