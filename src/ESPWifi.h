@@ -8,6 +8,7 @@ class ESPWifi:
 {
 private:
     void loop();
+    
 public:
     int init();
     ESPWifi(int pn);
